@@ -1,3 +1,5 @@
+# Ruslan Israfilov BS18-SB-01 DevOps Labs
+
 # Lab 1-2
 ## Web Application
 Application is coded with prod. ready framework - FastAPI.
@@ -7,6 +9,8 @@ Europe/Moscow timezone and return the time in the JSON format (simply speaking m
 for the timeapi.io API only for the Europe/Moscow timezone current time).
 
 Testing was performed using the pytest library.
+
+Endpoint is in `/app_python/api/routes/time.py`
 
 ### How to start
 Clone the repository:
