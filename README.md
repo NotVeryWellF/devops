@@ -45,3 +45,24 @@ It will perform 2 tests:
 1. Test of the endpoint (pass if response code == 200)
 2. Test of the time (pass if the current time on the server hardware in the Europe/Moscow
 timezone is within 5 second range to the endpoint time)
+
+## Docker
+
+### How to start the app with docker
+
+1. From Dockerfile
+   1. In the project directory build the image: \
+   `docker build -t webapp .`
+   2. Run docker container: \
+   `docker run --name webapp1 -d -p 8000:8000 webapp`
+   3. Go to the browser with the same link as in the case without docker.
+2. From Dockerhub image
+   1. Run docker container from the dockerhub image: \
+   `docker run --name webapp1 -d -p 8000:8000 cendien/webapp:latest`
+   2. Go to the browser with the same link as in the case without docker.
+
+### How to test
+
+After running the container you can execute: \
+`docker exec webapp1 python -m pytest ./app_python/tests/test.py` \
+and check if all tests were passed
