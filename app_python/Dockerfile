@@ -7,6 +7,6 @@ COPY ./requirements.txt /webapp/requirements.txt
 
 RUN pip install -r requirements.txt
 
-COPY . /webapp
+COPY . /webapp/app_python
 
 ENTRYPOINT ["uvicorn", "app_python.api.server:app", "--reload", "--workers", "1", "--host", "0.0.0.0", "--port", "8000"]
