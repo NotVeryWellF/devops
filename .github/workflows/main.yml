@@ -27,7 +27,7 @@ jobs:
           python-version: 3.9
       
       - name: Tests
-      - run: python -m pytest ./tests/test.py
+        run: python -m pytest ./tests/test.py
       
   build:
     # The type of runner that the job will run on
