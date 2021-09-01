@@ -1,7 +1,7 @@
 pipeline {
-    agent { docker { image 'python:3.9-slim-buster' } }
+    agent { docker { image 'python:3.8.0-slim-buster' } }
     stages {
-        stage('build') {
+        stage('dependencies') {
             steps {
                 sh '''
                       pip install --upgrade pip
@@ -13,6 +13,14 @@ pipeline {
         stage('test') {
             steps {
                 sh "python -m pytest ./app_python/tests/test.py"
+            }
+        }
+        stage('build') {
+            steps {
+                sh '''
+                   cd ./app_python
+                   docker build -t webapp .
+                   '''
             }
         }
     }
