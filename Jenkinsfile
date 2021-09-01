@@ -3,7 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh "echo hello_world"
+                sh '''apt-get update
+                      apt-get install python, python-pip
+                      pip install --upgrade pip
+                      pip install -r ./app_python/requirements.txt
+                      '''
+
             }
         }
         stage('test') {
