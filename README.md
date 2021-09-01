@@ -72,3 +72,7 @@ and check if all tests were passed
 You can read about my tests in the `Lab 1-2 How to test` sections
 
 ### Git Actions CI
+main.yml 
+
+### Jenkins
+Jenkinsfile
