@@ -66,9 +66,3 @@ timezone is within 5 second range to the endpoint time)
 After running the container you can execute: \
 `docker exec webapp1 python -m pytest ./app_python/tests/test.py` \
 and check if all tests were passed
-
-# Lab 3
-### Unit tests
-You can read about my tests in the `Lab 1-2 How to test` sections
-
-### Git Actions CI
