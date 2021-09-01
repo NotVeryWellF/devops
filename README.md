@@ -78,3 +78,8 @@ main.yml
 
 ### Jenkins
 Jenkinsfile
+
+# Lab 4
+
+I used Vagrant instead of Terraform (because terraform doesn't work with vbox). \
+So folder is called vagrant, and not terraform.
