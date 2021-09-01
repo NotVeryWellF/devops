@@ -9,7 +9,6 @@ pipeline {
         stage('test') {
             steps {
                 sh "python -m pytest ./app_python/tests/test.py"
-                )
             }
         }
     }
