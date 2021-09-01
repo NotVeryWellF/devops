@@ -1,13 +1,12 @@
 pipeline {
-    agent any
+    agent { docker { image 'python:3.9-slim-buster' } }
     stages {
         stage('build') {
             steps {
-                sh '''apt-get update
-                      apt-get install python, python-pip
+                sh '''
                       pip install --upgrade pip
                       pip install -r ./app_python/requirements.txt
-                      '''
+                   '''
 
             }
         }
