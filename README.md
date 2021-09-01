@@ -1,5 +1,7 @@
 # Ruslan Israfilov BS18-SB-01 DevOps Labs
 
+> All .md files are in the app_python (except README.md)
+
 # Lab 1-2
 ## Web Application
 Application is coded with prod. ready framework - FastAPI.
