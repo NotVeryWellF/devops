@@ -20,6 +20,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Cache
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1.5.1
+        
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
@@ -38,6 +42,8 @@ jobs:
           context: ./app_python
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/devopsapp:latest
-      
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
+        
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
