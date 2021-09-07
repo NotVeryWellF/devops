@@ -85,3 +85,7 @@ I used Vagrant instead of Terraform (because terraform doesn't work with vbox) f
 So folder is called vagrant, and not terraform.
 
 Second part of the lab is in terraform folder.
+
+# Lab 5-6
+
+ansible folder
