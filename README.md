@@ -1,6 +1,6 @@
 # Ruslan Israfilov BS18-SB-01 DevOps Labs
 
-> All .md files are in the app_python (except README.md)
+> All .md files for the first 3 labs are in the app_python (except README.md)
 
 # Lab 1-2
 ## Web Application
