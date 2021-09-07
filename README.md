@@ -81,5 +81,7 @@ Jenkinsfile
 
 # Lab 4
 
-I used Vagrant instead of Terraform (because terraform doesn't work with vbox). \
+I used Vagrant instead of Terraform (because terraform doesn't work with vbox) for the first part of the lab.
 So folder is called vagrant, and not terraform.
+
+Second part of the lab is in terraform folder.
