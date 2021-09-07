@@ -1,0 +1,21 @@
+---
+- name: Check the directory
+  become: true
+  file:
+    path: "{{ app_folder }}"
+    state: directory
+    mode: 0755
+
+- name: Copy docker-compose
+  template:
+    src: template/docker-compose.yml.j2
+    dest: "{{ app_folder }}/docker-compose.yaml"
+    mode: 0644
+
+- name: Run
+  become: true
+  community.docker.docker_compose:
+    project_src: "{{ app_folder }}"
+    recreate: always
+    state: present
+    pull: true

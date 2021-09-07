@@ -1,0 +1,1 @@
+> I used `geerlingguy/ansible-role-docker` as a role for the installation of docker

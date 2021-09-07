@@ -1,0 +1,7 @@
+version: '3'
+services:
+  devopsapp:
+    image: {{ image }}:{{ tag }}
+    ports:
+      - "{{ outside_port }}: {{ inside_port }}"
+    restart: always

@@ -60,7 +60,7 @@ timezone is within 5 second range to the endpoint time)
    3. Go to the browser with the same link as in the case without docker.
 2. From Dockerhub image
    1. Run docker container from the dockerhub image: \
-   `docker run --name webapp1 -d -p 8000:8000 cendien/webapp:latest`
+   `docker run --name webapp1 -d -p 8000:8000 cendien/devopsapp:latest`
    2. Go to the browser with the same link as in the case without docker.
 
 ### How to test
