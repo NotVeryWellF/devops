@@ -89,3 +89,7 @@ Second part of the lab is in terraform folder.
 # Lab 5-6
 
 ansible folder
+
+# Lab 7-8
+monitoring folder \
+Reports: `LOGGING.md` and `METRICS.md`
