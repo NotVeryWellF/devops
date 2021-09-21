@@ -93,3 +93,7 @@ ansible folder
 # Lab 7-8
 monitoring folder \
 Reports: `LOGGING.md` and `METRICS.md`
+
+# Lab 9-10
+k8s folder \
+Report: `README.md`
