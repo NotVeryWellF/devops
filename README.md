@@ -97,3 +97,7 @@ Reports: `LOGGING.md` and `METRICS.md`
 # Lab 9-10
 k8s folder \
 Report: `README.md`
+
+# Lab 11-12
+k8s folder \
+Reports: `11.md` and `12.md`
