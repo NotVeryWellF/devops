@@ -6,7 +6,7 @@ replicaCount: 3
 
 volumes:
   configPath: "/etc/config"
-  visits: "app_python/visits/"
+  visits: "/app_python/visits/"
 
 image:
   repository: cendien/devopsapp
