@@ -35,12 +35,6 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          env:
-            - name: MY_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: credentials
-                  key: password
           ports:
             - name: http
               containerPort: 8000
@@ -81,4 +75,4 @@ spec:
     - metadata:
         name: visits
       spec:
-        {{ - toYaml .Values.statefulSet.volumeClaimTemplates.spec | nindent 8 }}
+        {{- toYaml .Values.statefulSet.volumeClaimTemplates.spec | nindent 8 }}
